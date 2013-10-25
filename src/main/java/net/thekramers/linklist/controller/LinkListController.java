@@ -15,7 +15,7 @@ public class LinkListController {
 
     private final AtomicLong counter = new AtomicLong();
 
-    @RequestMapping(value="/linklist", method=RequestMethod.POST)
+    @RequestMapping(value="/linklist", method=RequestMethod.GET)
     public @ResponseBody Link link(
 		@RequestParam(value="folder", required=false, defaultValue="ROOT") String folder ,
 		@RequestParam(value="url", required=true) String url,
