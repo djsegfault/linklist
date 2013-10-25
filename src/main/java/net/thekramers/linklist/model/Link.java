@@ -4,13 +4,11 @@ public class Link {
     private final long id;
 	private String url;
 	private String description;
-	private String folder;
 
-	public Link(Long id, String folder, String url, String description) {
+	public Link(Long id, String url, String description) {
 		this.id = id;
 		this.url = url;
 		this.description = description;
-		this.folder = folder;
 	}
 
 	public long getId() {
@@ -32,13 +30,4 @@ public class Link {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-
-	public String getFolder() {
-		return folder;
-	}
-
-	public void setFolder(String folder) {
-		this.folder = folder;
-	}
-
 }
